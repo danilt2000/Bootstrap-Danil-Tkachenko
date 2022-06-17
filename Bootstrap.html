@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .fakeimg {
+        height: 200px;
+        background: #aaa;
+      }
+    </style>
+    <style type="text/css">
+      .space {
+        padding: 20px; /* Поля */
+        background: white; /* Цвет фона */
+        border: 2px solid rgb(27, 133, 182); /* Параметры рамки */
+      }
+      .space2 {
+        padding: 20px; /* Поля */
+        background: white; /* Цвет фона */
+        border: 2px solid rgba(110, 199, 240, 0.438); /* Параметры рамки */
+      }
+      .space3 {
+        padding: 20px; /* Поля */
+        background: white; /* Цвет фона */
+        border: 2px solid rgba(233, 70, 21, 0.315); /* Параметры рамки */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-light border p-0">
+        <div class="d-flex flex-row bd-highlight">
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link" href="#">ADMIN IS</a>
+          </div>
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link dropdown-toggle" href="#">Obchod</a>
+          </div>
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link" href="#">Zakázky</a>
+          </div>
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link" href="#">Plán výroby</a>
+          </div>
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link dropdown-toggle" href="#">Nastavení</a>
+          </div>
+        </div>
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <div class="nav-item dropdown nav navbar-nav p-2 nav-item">
+            <a class="nav-link dropdown-toggle"
+              ><i class="bi bi-person"></i> Petr Novák</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- <div class="container  "  style="padding: 40px 20px; ">
+  
+    <nobr class="text-primary">ADMIN IS</nobr>
+    >
+    <nobr class="text-primary">Nabidky</nobr>
+    >Nova nabidka
+    
+</div> -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-4" style="padding: 17px 20px">
+          <nobr class="text-primary">ADMIN IS</nobr>
+          >
+          <nobr class="text-primary">Nabidky</nobr>
+          >Nova nabidka
+        </div>
+        <div class="col-sm-8">
+          <div class="alert alert-success rounded-3">Nabidka byla ulozena</div>
+
+          <!-- <div class="fakeimg">Fake Image</div> -->
+        </div>
+      </div>
+      <div
+        class="shadow-none container mt-4 navbar navbar-light bg-light border p-4 rounded-3"
+      >
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="padding: 10px 80px"
+        >
+          Ulozit
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          style="padding: 10px 80px"
+        >
+          Zpet na nabidky
+        </button>
+      </div>
+
+      <div class="container-fluid" style="margin-top: 85px">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="text-secondary"><b>Nabidka k poptavce</b></h4>
+            <!-- <div class="shadow-none  container mt-4 bg-light border p-4 rounded-3 "></div> -->
+
+            <!-- <button type="button" class="btn btn-outline-dark container mt-4">Dark</button> -->
+            <div class="col">
+              <select
+                class="form form-select btn-outline-dark container dropdown-toggle"
+              >
+                <option value="1">Automatická svářečka pytlů</option>
+                <option value="2">Neco</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h4 class="text-secondary"><b>Datum vytvoreni</b></h4>
+            <!-- <div class="shadow-none  container mt-4 bg-light border p-4 rounded-3 "></div> -->
+
+            <!-- <button type="button" class="btn btn-outline-dark container mt-4">Dark</button> -->
+            <div class="col">
+              <select
+                class="form form-select btn-outline-dark container dropdown-toggle"
+              >
+                <option value="1">25.5.2018</option>
+                <option value="2">Neco</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="margin-top: 85px">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="text-secondary"><b>Nazev</b></h4>
+            <!-- <div class="shadow-none  container mt-4 bg-light border p-4 rounded-3 "></div> -->
+
+            <!-- <button type="button" class="btn btn-outline-dark container mt-4">Dark</button> -->
+            <div class="col">
+              <select
+                class="form form-control btn-outline-dark container dropdown-toggle"
+              >
+                <option value="1"></option>
+                <option value="2">Neco</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h4 class="text-secondary"><b>Datum akceptace</b></h4>
+            <!-- <div class="shadow-none  container mt-4 bg-light border p-4 rounded-3 "></div> -->
+
+            <!-- <button type="button" class="btn btn-outline-dark container mt-4">Dark</button> -->
+            <div class="col">
+              <select
+                class="form form-select btn-outline-dark container dropdown-toggle"
+              >
+                <option value="1">26.5.2018</option>
+                <option value="2">Neco</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-secondary" style="margin-top: 30px"><b>Popis</b></h4>
+
+        <textarea
+          class="form-control"
+          rows="5"
+          id="comment"
+          name="text"
+        ></textarea>
+        <div class="container-fluid text-light">
+          <div class="row">
+            <div class="col-sm-6 bg-primary" style="margin-top: 30px">
+              <h5 class="mt-2">Dokumenty</h5>
+            </div>
+            <div class="col-sm-6 bg-primary" style="margin-top: 30px">
+              <h5 class="mt-1" type="button" style="text-align: right">
+                <nobr style="font-size: 18pt">⊕ </nobr>Pripojit soubor
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="space">
+          <table class="table" style="text-align: center">
+            <tbody>
+              <tr>
+                <td><b>Nazev</b></td>
+                <td><b>Nazev souboru</b></td>
+                <td><b>Datum nahrani</b></td>
+              </tr>
+              <tr>
+                <td>Cenova nabidka</td>
+                <td>Navrh smlouvy</td>
+                <td>Cestne prohlaseni</td>
+              </tr>
+              <tr>
+                <td>specifikace.pdf</td>
+                <td>smlouva_navrh.pdg</td>
+                <td>cestne_prohlaseni.doc</td>
+              </tr>
+              <tr>
+                <td>25.5.2018</td>
+                <td>25.5.2018</td>
+                <td>25.5.2018</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div style="height: 40px;" class="col-sm-12 rounded-1  container-fluid mt-3 alert-primary rounded-3">
+              <h5 class="mt-2">Poznamky</h5>
+            </div> -->
+        <div class="container-fluid text-light">
+          <div class="row">
+            <div class="alert-primary" style="margin-top: 30px">
+              <h5 class="mt-2">Poznamky</h5>
+            </div>
+          </div>
+        </div>
+        <div class="space2">
+          <div class="row">
+            <div class="col-sm-10">
+              <textarea
+                class="form-control"
+                rows="5"
+                name="Poznamky"
+                placeholder="Nova poznamka"
+              ></textarea>
+            </div>
+            <div class="col-sm-2">
+              <div class="d-grid">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="height: 135px"
+                >
+                  Vlozit poznamku
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid text-light">
+            <div class="row">
+              <div class="alert-primary col-sm-11" style="margin-top: 30px">
+                <h6 class="mt-2">Petr Novak - 27.5.2018</h6>
+              </div>
+              <div class="alert-primary col-sm-1" style="margin-top: 30px">
+                <div class="form-check mt-1">
+                  <input
+                    style="text-align: start"
+                    type="checkbox"
+                    class="form-check-input"
+                    id="check1"
+                    name="option1"
+                    value="something"
+                    checked
+                  />
+                  <label class="form-check-label" for="check1">osobní</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space2">
+
+            Nabidku jsem odeslal 26.6:2018 primo generalnimu rediteli.
+          </div>
+          
+          <div class="container-fluid text-light">
+            <div class="row">
+              <div class="alert-danger col-sm-11" style="margin-top: 30px">
+                <h6 class="mt-2">Petr Novak - 26.5.2018</h6>
+              </div>
+              <div class="alert-danger col-sm-1" style="margin-top: 30px">
+                <div class="form-check mt-1">
+                  <input
+                    style="text-align: start"
+                    type="checkbox"
+                    class="form-check-input"
+                    id="check1"
+                    name="option1"
+                    value="something"
+                    checked
+                  />
+                  <label class="form-check-label" for="check1">osobní</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space3">
+            Na nabidku jsme dali slevu 15% oproti normalu
+          
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
